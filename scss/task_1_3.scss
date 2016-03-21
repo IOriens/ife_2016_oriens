@@ -1,0 +1,112 @@
+// absolute
+//* {
+//  box-sizing: border-box;
+//}
+//
+//.wrapper {
+//  padding: 20px;
+//  background-color: #eee;
+//  border: 1px solid #999;
+//  position: relative ;
+//  color: #fff;
+//  .team-logo {
+//    position: absolute;
+//    top: 20px;
+//    left: 20px;
+//    width: 200px;
+//    padding: inherit;
+//    background-color: #49afcd;
+//  }
+//  .team-desc {
+//    //width: 100%;
+//    margin-left:  200px;
+//    margin-right: 120px;
+//    padding: inherit;
+//    background-color: #000000;
+//    min-width: 40px;
+//  }
+//
+//  .member-logos {
+//    position: absolute;
+//    top: 20px;
+//    right: 20px;
+//    width: 120px;
+//    height: 300px;
+//    padding: inherit;
+//    background-color: #1f6377;
+//  }
+//}
+
+//Float
+* {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,ul,li{
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  padding: 20px;
+  background-color: #eee;
+  border: 1px solid #999;
+  overflow: hidden;
+  color: #000;
+
+  .team-logo {
+    float:left;
+    width: 200px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #999;
+    position: relative;
+    margin-left: -100%;
+
+    span {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  .inner{
+    float: left;
+    width: 100%;
+  }
+
+  .team-desc {
+    padding: 20px;
+    margin-left: 220px;
+    margin-right: 140px;
+    background-color: #fff;
+    border: 1px solid #999;
+  }
+
+  .member-logos {
+    float:left;
+    width: 120px;
+    margin-left: -120px;
+    background-color: #fff;
+    border: 1px solid #999;
+    ul {
+      list-style-type: none;
+      li{
+        margin: 20px;
+      }
+    }
+  }
+}
+
+
+.logo {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #999;
+}
+
+
