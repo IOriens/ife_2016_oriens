@@ -1,6 +1,8 @@
 html, body {
   height: 100%;
-  position: relative; }
+  position: relative;
+  margin: 0;
+  padding: 0; }
 
 .square {
   width: 400px;
@@ -10,14 +12,13 @@ html, body {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -200px;
-  margin-top: -100px; }
+  transform: translate(-50%, -50%); }
   .square .top-left {
     width: 100px;
     height: 100px;
     border-radius: 50px;
     background-color: #fc0;
-    position: relative;
+    position: absolute;
     top: -50px;
     left: -50px; }
   .square .bottom-right {
@@ -25,8 +26,8 @@ html, body {
     height: 100px;
     border-radius: 50px;
     background-color: #fc0;
-    position: relative;
-    top: 50px;
-    left: 350px; }
+    position: absolute;
+    bottom: -50px;
+    right: -50px; }
 
 /*# sourceMappingURL=task_1_4.css.map */
