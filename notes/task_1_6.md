@@ -24,6 +24,14 @@ p {
 }
 ```
 
+## 如何将背景图标设置到文本前面
+```css
+h2 {
+    background: url("../img/up_triangle.png") no-repeat  left center;
+}
+
+```
+
 # 知识点
 ## 内联元素设置了float后会自动产生格式化块级上下文，所以不需要设置`display: block;`
 ## 常见中文字体
