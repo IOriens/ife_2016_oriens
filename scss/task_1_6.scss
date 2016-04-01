@@ -42,6 +42,21 @@ body,ul,h1,h2,p {
       bottom: 6px;
     }
   }
+  footer {
+    margin-top: 34px;
+    border-top: 1px solid #938e8c;
+    width: 100%;
+    overflow: hidden;
+    height: 60px;
+    span {
+      float: right;
+      a {
+        font: 12px SimHei;
+        color: #d45d5c;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 .banner {
@@ -191,7 +206,7 @@ body,ul,h1,h2,p {
       font:bold 42px SimHei;
       color: #11456b;
       span {
-        font:italic bold 72px SimHei;
+        font:italic bold 72px/72px SimHei;
         color: #f5e327;
       }
     }
@@ -256,6 +271,85 @@ body,ul,h1,h2,p {
         span:last-child {
           font: italic 12px Microsoft YaHei;
           color: #72b16a;
+        }
+      }
+    }
+
+    .right-corner {
+      position: relative;
+      background-color: #eeedd6;
+      width: 459px;
+      height: 318px;
+      .right-corner-index {
+        padding-top: 20px;
+        h3 {
+          font: 16px SimSun;
+          color: #5a5b5b;
+          margin: 20px ;
+          text-align: left;
+          background: url("../img/up_triangle.png") no-repeat  left center;
+          padding-left: 11px;
+          span {
+            font: italic 12px SimSun;
+            color: #5a5b5b;
+            text-align: right;
+          }
+        }
+      }
+      .right-corner-left {
+        background-color: #d45d5c;
+        width: 260px;
+        height: 160px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: (160px - 86px)/2 15px;
+        overflow: hidden;
+        color: #fff;
+        h1 {
+          float: left;
+          font: 110px/86px Microsoft YaHei;
+          border-right: 2px solid #fff;
+          height: 86px;
+          margin-right: 6px;
+        }
+        h2 {
+          font: italic 21px SimHei;
+        }
+        p {
+          margin: 6px;
+          font:  12px SimHei;
+        }
+      }
+
+      .right-corner-right {
+        float: right;
+        width: 459px - 260px;
+        height: 160px;
+        padding: 12px;
+        p {
+          font: italic 14px/16px SimHei;
+          color: #5a5b5b;
+          float: left;
+          //overflow: hidden;
+          strong {
+            font: 72px/72px SimHei;
+            color: #d45d5c;
+            width: 42px;
+            height: 14px;
+          }
+          strong#left-comma {
+            float: left;
+            position: relative;
+            left: -35px;
+            top: -14px;
+          }
+          strong#right-comma {
+            float: right;
+            position: relative;
+            left: -8px;
+            top: 2px;
+          }
         }
       }
     }

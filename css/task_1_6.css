@@ -37,6 +37,18 @@ body, ul, h1, h2, p {
       position: absolute;
       right: 0;
       bottom: 6px; }
+  .wrapper footer {
+    margin-top: 34px;
+    border-top: 1px solid #938e8c;
+    width: 100%;
+    overflow: hidden;
+    height: 60px; }
+    .wrapper footer span {
+      float: right; }
+      .wrapper footer span a {
+        font: 12px SimHei;
+        color: #d45d5c;
+        text-decoration: none; }
 
 .banner {
   overflow: hidden;
@@ -150,7 +162,7 @@ body, ul, h1, h2, p {
       font: bold 42px SimHei;
       color: #11456b; }
       .main-content .fe-intro h1 span {
-        font: italic bold 72px SimHei;
+        font: italic bold 72px/72px SimHei;
         color: #f5e327; }
     .main-content .fe-intro h2 {
       font: bold 33px SimHei;
@@ -203,5 +215,68 @@ body, ul, h1, h2, p {
         .main-content .illustration .ill-banner .desc span:last-child {
           font: italic 12px Microsoft YaHei;
           color: #72b16a; }
+    .main-content .illustration .right-corner {
+      position: relative;
+      background-color: #eeedd6;
+      width: 459px;
+      height: 318px; }
+      .main-content .illustration .right-corner .right-corner-index {
+        padding-top: 20px; }
+        .main-content .illustration .right-corner .right-corner-index h3 {
+          font: 16px SimSun;
+          color: #5a5b5b;
+          margin: 20px;
+          text-align: left;
+          background: url("../img/up_triangle.png") no-repeat left center;
+          padding-left: 11px; }
+          .main-content .illustration .right-corner .right-corner-index h3 span {
+            font: italic 12px SimSun;
+            color: #5a5b5b;
+            text-align: right; }
+      .main-content .illustration .right-corner .right-corner-left {
+        background-color: #d45d5c;
+        width: 260px;
+        height: 160px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 37px 15px;
+        overflow: hidden;
+        color: #fff; }
+        .main-content .illustration .right-corner .right-corner-left h1 {
+          float: left;
+          font: 110px/86px Microsoft YaHei;
+          border-right: 2px solid #fff;
+          height: 86px;
+          margin-right: 6px; }
+        .main-content .illustration .right-corner .right-corner-left h2 {
+          font: italic 21px SimHei; }
+        .main-content .illustration .right-corner .right-corner-left p {
+          margin: 6px;
+          font: 12px SimHei; }
+      .main-content .illustration .right-corner .right-corner-right {
+        float: right;
+        width: 199px;
+        height: 160px;
+        padding: 12px; }
+        .main-content .illustration .right-corner .right-corner-right p {
+          font: italic 14px/16px SimHei;
+          color: #5a5b5b;
+          float: left; }
+          .main-content .illustration .right-corner .right-corner-right p strong {
+            font: 72px/72px SimHei;
+            color: #d45d5c;
+            width: 42px;
+            height: 14px; }
+          .main-content .illustration .right-corner .right-corner-right p strong#left-comma {
+            float: left;
+            position: relative;
+            left: -35px;
+            top: -14px; }
+          .main-content .illustration .right-corner .right-corner-right p strong#right-comma {
+            float: right;
+            position: relative;
+            left: -8px;
+            top: 2px; }
 
 /*# sourceMappingURL=task_1_6.css.map */
