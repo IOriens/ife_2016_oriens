@@ -293,10 +293,100 @@ header {
     .about-us-detail div:nth-child(2) .border {
       border-bottom: 2px solid #ababab; }
 
+.register {
+  padding-top: 110px; }
+  .register .welcome {
+    text-align: center; }
+    .register .welcome h1 {
+      font: 21px/31px "SimHei";
+      color: #000; }
+    .register .welcome h2 {
+      font: 12px/18px "Microsoft YaHei UI";
+      color: #aaa; }
+    .register .welcome div.border {
+      width: 3em;
+      border-bottom: 3px solid #cd4a48;
+      margin: 10px  auto 12px auto; }
+  .register .terms {
+    margin-top: 100px;
+    width: 33.33333%;
+    padding-left: 140px;
+    padding-right: 75px;
+    float: left; }
+    .register .terms h2 {
+      font: 14px "SimHei";
+      color: #000;
+      margin-bottom: 25px;
+      clear: both; }
+    .register .terms p {
+      font: 12px/21px "SimSun";
+      color: #231815; }
+    .register .terms a {
+      float: right;
+      font: 12px/20px "SimSun";
+      color: #231815;
+      margin: 5px 0 10px 0;
+      padding-left: 13px;
+      text-decoration: none;
+      background: url("../img/task_1_7/arrow_down2.png") no-repeat left center; }
+  .register form {
+    width: 66.66667%;
+    float: left;
+    padding-right: 140px;
+    margin-top: 100px; }
+    .register form input, .register form textarea {
+      background-color: #ededef;
+      border: none;
+      padding: 15px 18px;
+      font: 12px/auto "SimSun";
+      color: #231815; }
+    .register form input {
+      width: 40%;
+      margin: 0 2% 2% 0; }
+    .register form input[type="submit"] {
+      width: 83%;
+      color: #000;
+      font: 14px/auto "SimHei"; }
+    .register form textarea {
+      display: block;
+      resize: none;
+      width: 83%;
+      margin-bottom: 2%;
+      color: #231815; }
+
+.contact-info {
+  margin-top: 100px;
+  height: 355px;
+  background-color: #32353e;
+  clear: both;
+  text-align: center;
+  padding-top: 90px;
+  color: #fff; }
+  .contact-info h1 {
+    font: 21px/49px "SimHei"; }
+  .contact-info h2 {
+    font: 12px/18px "SimSun"; }
+  .contact-info input {
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .contact-info input[type="email"] {
+    width: 430px;
+    height: 40px;
+    padding-left: 10px; }
+  .contact-info input[type="submit"] {
+    width: 80px;
+    height: 40px;
+    background-color: #6f7278;
+    color: #fff; }
+  .contact-info a {
+    margin: 10px; }
+
 footer {
   height: 57px;
   background-color: #303039;
-  color: #fff; }
+  color: #fff;
+  clear: both; }
   footer span {
     float: left;
     padding: 1em 3em; }
