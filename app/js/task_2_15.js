@@ -41,6 +41,9 @@ function sortAqiData(data) {
     for(var i = 0,length = data.length; i < length; i ++) {        
         sortedData.push(data[i])        
     }    
+    sortedData.sort(function name(a,b) {
+        return a[1] - b[1] 
+    })
     return sortedData
 }
 
