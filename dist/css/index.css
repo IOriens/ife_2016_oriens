@@ -13,7 +13,6 @@ html, body {
 
 .wrapper {
   min-height: 100%;
-  padding-bottom: 3em;
 }
 
 header {
@@ -35,6 +34,7 @@ header h1 {
 }
 
 main {
+  padding-bottom: 3em;
   overflow: hidden;
 }
 
