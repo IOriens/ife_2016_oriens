@@ -6,8 +6,8 @@ var sourcemaps = require('gulp-sourcemaps')
 var autoprefixer = require('gulp-autoprefixer')
 var sassdoc = require('sassdoc')
 var eslint = require('gulp-eslint')
-
-
+var uglify = require('gulp-uglify')
+var htmlMinify = require('gulp-html-minifier')
 //Sass
 var sassInput = './app/scss/**/*.scss'
 var cssOuput = './app/css'
@@ -57,11 +57,6 @@ gulp.task('serve', function () {
 	gulp.watch(['*.html', 'css/*.css', 'js/*.js'], { cwd: 'app' }, reload)
 })
 
-
-
-
-
-
 //ESLint 检测JS的语法错误
 gulp.task('lint', function name() {
 	return gulp.src(['./app/js/*.js', './app/*.html'])
@@ -81,8 +76,15 @@ gulp.task('prod', ['sassdoc'], function () {
 	gulp.src(['./app/css/*.css','./app/css/*.map'])
 		.pipe(gulp.dest('./dist/css'))
 	gulp.src('./app/*.html')
+		.pipe(htmlMinify({ //https://github.com/kangax/html-minifier
+		  minifyCSS: true,
+          minifyJS: true,
+          collapseWhitespace: true,
+          removeAttributeQuotes: true
+		}))
 		.pipe(gulp.dest('./dist'))
 	gulp.src('./app/js/*.js')
+		.pipe(uglify())
 		.pipe(gulp.dest('./dist/js'))
 	gulp.src('./app/img/**/*')
 		.pipe(gulp.dest('./dist/img'))
