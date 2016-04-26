@@ -40,10 +40,19 @@ function sortAqiData(data) {
     var sortedData = []
     for(var i = 0,length = data.length; i < length; i ++) {        
         sortedData.push(data[i])        
-    }    
-    sortedData.sort(function name(a,b) {
-        return a[1] - b[1] 
-    })
+    }
+    for(var i = 0,length = sortedData.length; i < length; i ++) {
+        var j = i - 1, key2 = sortedData[i][1],key1 = sortedData[i][0]
+        while(j >= 0) {
+            if(sortedData[j][1] > key2) {
+                sortedData[j + 1] = [sortedData[j][0],sortedData[j][1]]
+                j --
+            } else {
+                break
+            }
+        }
+        sortedData[j + 1] = [key1,key2]
+    }
     return sortedData
 }
 
