@@ -1,5 +1,15 @@
 ## IFE 2016 IOriens
-## You can watch these demos on [http://ioriens.github.io/ife_2016_oriens/](http://ioriens.github.io/ife_2016_oriens/)
+
+## Watch demos on [Github Page](http://ioriens.github.io/ife_2016_oriens/)
+
+## How to build
+In root directory:
+```
+npm install # install dependencies 
+gulp # use gulp to open server and build sass
+```
+Dev in `app` dir, distribute in dir `dist`
+
 ## Dependency: 
 ```
 "browser-sync": "^2.12.3",
