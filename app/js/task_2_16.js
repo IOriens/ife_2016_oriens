@@ -29,13 +29,24 @@ var aqiData = {
 function addAqiData() {
   var city = $('aqi-city-input').value
   var airCondition = parseInt($('aqi-value-input').value)
-  if (city) {
-    
+  var flag = 0  
+  if (city.match(/^[a-zA-Z\u4e00-\u9fa5]{1,}/)) {    
+    flag ++
+  }else{
+    alert('请输入合理的城市名称')
   }
-  if(airCondition < 0 || airCondition > 1000) {
-    alert('请输入合理的空气质量数')
+  if(airCondition > 0 && airCondition < 5000) {
+    flag ++
+  }else{
+    alert('输入的aqi不合理')
   }
-  aqiData[city] = airCondition
+  if(flag === 2){
+    if(aqiData[city] === airCondition) {
+      alert('你已经输入过这个咯')
+    }
+    aqiData[city] = airCondition  
+  }
+  
 }
 
 /**
