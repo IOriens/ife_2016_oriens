@@ -22,7 +22,7 @@ var sleep = function (delta) {
 
 var render = function () {
     $$('info').innerHTML = ''
-    console.log(data)
+    // console.log(data)
     for (var it in data) {
 
         if (data.hasOwnProperty(it)) {
@@ -31,7 +31,7 @@ var render = function () {
             var span2 = document.createElement('span')
             span2.className = 'inner-span'
             span2.innerHTML = data[it]
-            console.log(data[it])
+            // console.log(data[it])
             span.appendChild(span2)
             span.className = 'willnotrender'
             span.style.cssText += ';height:' + (data[it] * 1.5) + 'px;left:' + (it * 25) + 'px;'
@@ -92,8 +92,7 @@ var bubbleSort = function () {
 
     var it = setInterval(run, 25)    
     function run() { 
-        console.log('running')   
-            
+        // console.log('running')               
         if (i < len) {
             if (j < len) {
                 if (data[j] < data[i]) {
